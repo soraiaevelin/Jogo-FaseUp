@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Capture os objetos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="game">
+    <div id="player"></div>
+    <div id="hud">
+      <div id="score">Pontuação: 0</div>
+      <div id="lives">Vidas: 3</div>
+      <div id="phase">Fase: 1</div>
+    </div>
+  </div>
+  <div id="instructionModal" style="display:none;">
+  <h2 id="phaseTitle"></h2>
+  <p><strong>Itens bons:</strong></p>
+  <div id="goodItemsDisplay"></div>
+  <p><strong>Itens ruins:</strong></p>
+  <div id="badItemsDisplay"></div>
+  <button id="playButton">Jogar</button>
+  <div id="countdown"></div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
