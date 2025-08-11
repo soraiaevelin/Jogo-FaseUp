@@ -155,7 +155,7 @@ function dropItem(phase) {
   item.classList.add('item');
   item.style.backgroundImage = `url('${itemSrc}')`;
   item.style.left = Math.random() * (window.innerWidth - 80) + 'px';
-  item.style.top = '-90px'; // define posição inicial
+  item.style.top = '-90px'; 
   game.appendChild(item);
 
   const fall = setInterval(() => {
