@@ -7,23 +7,39 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <div id="game">
     <div id="player"></div>
+
     <div id="hud">
       <div id="score">Pontuação: 0</div>
       <div id="lives">Vidas: 3</div>
       <div id="phase">Fase: 1</div>
     </div>
   </div>
+
+  <!-- MODAL DE INSTRUÇÕES -->
   <div id="instructionModal" style="display:none;">
-  <h2 id="phaseTitle"></h2>
-  <p><strong>Itens bons:</strong></p>
-  <div id="goodItemsDisplay"></div>
-  <p><strong>Itens ruins:</strong></p>
-  <div id="badItemsDisplay"></div>
-  <button id="playButton">Jogar("Clique aqui")</button>
-  <div id="countdown"></div>
-</div>
+    <h2 id="phaseTitle"></h2>
+
+    <p><strong>Itens bons:</strong></p>
+    <div id="goodItemsDisplay"></div>
+
+    <p><strong>Itens ruins:</strong></p>
+    <div id="badItemsDisplay"></div>
+
+    <button id="playButton">Jogar(Clique Aqui)</button>
+    <div id="countdown"></div>
+  </div>
+
+  <!-- MODAL GAME OVER -->
+  <div id="gameOverModal" style="display:none;">
+    <h2>💀 Você perdeu!</h2>
+    <p>Sua pontuação final:</p>
+    <p id="finalScore"></p>
+    <button id="restartButton">Reiniciar jogo</button>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
